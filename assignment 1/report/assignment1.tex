@@ -1,0 +1,104 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{seminar}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{hyperref}
+\pagestyle{fancy}
+
+
+%You can add theorem-like environments (e.g. remark, definition, ...) if you want
+\newtheorem{theorem}{Theorem}
+
+\title{Assignment 1: Neural Networks} % Replace with your title
+\author{Jonas Berger, Qiao Qiao} % Replace with your name
+\institute{Technische Universit\"{a}t M\"{u}nchen} % Replace with the department you belong to
+
+\makeatletter
+\let\runauthor\@author
+\let\runtitle\@title
+\makeatother
+\lhead{\runauthor}
+\rhead{\runtitle}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+...
+
+
+
+\section{Task 1: Function Approximation}
+
+\subsection{Data Preparation}
+
+\begin{itemize}
+
+ \item Plot the parametric surface and contour of the target function
+
+\end{itemize}
+
+\subsection{Network Design}
+
+\begin{itemize}
+
+	\item Plot the contours of the NN with 2, 8 and 50 hidden neurons.
+
+	\item Which is the best hidden neurons number among them? Why?
+
+\end{itemize}
+
+\subsection{Network Training}
+
+\begin{itemize}
+
+	\item Plot the contours of the NN with four different training algorithms.
+
+\end{itemize}
+
+\subsection{Network Testing}
+
+\begin{itemize}
+	
+	\item Plot the graphical output provided by \texttt{postreg}.
+
+\end{itemize}
+
+
+\section{Task 2: System identification}
+
+\begin{itemize}
+
+	\item Generate performance and training state plots for each of the cases.
+
+
+	\item Run the control system with each of the 3 cases and generate the reference tracking plots for them (X-Y plot in the default setup).
+
+	\item Do brief comparisons on the performance of each of the 3 cases based on the generated plots.
+
+	\item How relevant is the number of training epochs in this context?
+
+	\item Shortly justify which of the 3 sets of identification data you would pick to use.
+
+	\begin{equation}
+	SE(3) = \left\{
+	\begin{pmatrix}
+	R & \mathbf{t} \\ \mathbf{0} & 1
+	\end{pmatrix}
+	:
+	R^\top R = R R^\top = I_3, \mathbf{t}\in\mathbb{R}^3
+	\right\}
+	\end{equation}
+	
+\end{itemize}
+
+\end{document}
